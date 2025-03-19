@@ -1,0 +1,18 @@
+{
+  "name": "nowytodo",
+  "homepage": "https://placekjestcox.github.io/TODOlista",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run start --prefix backend\"",
+    "start": "node backend/server.js",
+    "predeploy": "npm run build --prefix frontend",
+    "deploy": "gh-pages -d frontend/dist"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "gh-pages": "^6.3.0"
+  },
+  "dependencies": {
+    "mongodb": "^6.14.2"
+  }
+}
