@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { addTodo } from '../api/api'; // Importujemy funkcję do dodawania zadania
+import { addTodo } from '../api/api'; 
 
 const AddTodo = () => {
   const [newTodo, setNewTodo] = useState('');
-
   const handleAdd = async () => {
     if (newTodo.trim()) {
       const todoData = {
@@ -12,12 +11,12 @@ const AddTodo = () => {
       };
 
       try {
-        console.log('Wysyłam zadanie:', todoData); // Sprawdzamy, czy dane są wysyłane
-        const addedTodo = await addTodo(todoData); // Wysyłamy zapytanie do backendu
+        console.log('Wysyłam zadanie:', todoData); 
+        const addedTodo = await addTodo(todoData); 
         setNewTodo('');
-        console.log('Dodane zadanie:', addedTodo); // Sprawdzamy odpowiedź
+        console.log('Dodane zadanie:', addedTodo); 
       } catch (error) {
-        console.error('Nie udało się dodać zadania', error); // Logujemy błąd
+        console.error('Nie udało się dodać zadania', error); 
       }
     }
   };

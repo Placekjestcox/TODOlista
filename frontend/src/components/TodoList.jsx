@@ -9,7 +9,7 @@ const TodoList = ({ todos, handleEditTodo, handleToggleComplete, handleDeleteTod
         todo={todo} 
         handleEditTodo={handleEditTodo} 
         handleToggleComplete={handleToggleComplete} 
-        handleDeleteTodo={handleDeleteTodo} // Dodanie przekazania funkcji usuwania
+        handleDeleteTodo={handleDeleteTodo} 
       />
     ))}
   </div>

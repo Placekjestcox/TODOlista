@@ -18,7 +18,7 @@ function App() {
     handleEditTodo,
     handleSaveEdit,
     handleCancelEdit,
-    handleDeleteTodo, // Dodajemy do destrukturyzacji
+    handleDeleteTodo, 
   } = useTodos();
 
   return (
@@ -46,7 +46,7 @@ function App() {
             todos={todos} 
             handleEditTodo={handleEditTodo} 
             handleToggleComplete={handleToggleComplete} 
-            handleDeleteTodo={handleDeleteTodo} // Przekazanie funkcji do TodoList
+            handleDeleteTodo={handleDeleteTodo} 
           />
         </div>
       </div>

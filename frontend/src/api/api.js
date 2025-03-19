@@ -1,5 +1,4 @@
 import axios from 'axios';
-
 const apiUrl = 'http://localhost:5000/api/todos';  
 
 export const addTodo = async (todoData) => {
@@ -22,7 +21,6 @@ export const fetchTodos = async () => {
   }
 };
 
-// Nowa funkcja do usuwania zadania
 export const deleteTodo = async (id) => {
   try {
     await axios.delete(`${apiUrl}/${id}`);

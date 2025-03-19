@@ -152,31 +152,26 @@ button:hover {
   white-space: normal;  
   overflow-wrap: break-word;  
 }
-
-/* Tło przyciemniające */
 .edit-dialog {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);  /* Przyciemnia tło */
+  background-color: rgba(0, 0, 0, 0.7); 
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;  /* Ustawia modal na wierzchu */
+  z-index: 999;  
 }
 
-/* Kontener formularza edycji */
 .edit-content {
-  
   padding: 20px;
   border-radius: 8px;
-  width: 300px;  /* Szerokość formularza */
+  width: 300px;
   text-align: center;
 }
 
-/* Przycisk zapisz i anuluj */
 .edit-buttons {
   margin-top: 10px;
 }
@@ -202,7 +197,6 @@ button:hover {
 }
 
 .opis.completed {
-  color: blue; /* Niebieski kolor tekstu */
+  color: blue; 
+
 }
-
-

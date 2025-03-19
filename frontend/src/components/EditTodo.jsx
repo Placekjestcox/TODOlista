@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css'; // Importujemy styl CSS
+import '../App.css';
 
 const EditTodo = ({ editedText, setEditedText, handleSaveEdit, handleCancelEdit }) => {
   return (

@@ -6,7 +6,6 @@ export const useTodos = () => {
   const [newTodo, setNewTodo] = useState('');
   const [editingTodo, setEditingTodo] = useState(null);
   const [editedText, setEditedText] = useState('');
-
   useEffect(() => {
     const getTodos = async () => {
       try {
@@ -66,7 +65,6 @@ export const useTodos = () => {
     setEditedText('');
   };
 
-  // Nowa funkcja do usuwania zadania
   const handleDeleteTodo = async (id) => {
     try {
       await deleteTodo(id);
@@ -89,6 +87,6 @@ export const useTodos = () => {
     handleEditTodo,
     handleSaveEdit,
     handleCancelEdit,
-    handleDeleteTodo, // Dodajemy funkcję do zwracanych wartości
+    handleDeleteTodo, 
   };
 };
