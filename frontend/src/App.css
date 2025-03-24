@@ -140,7 +140,7 @@ button:hover {
 }
 
 
-.opis {
+.description {
   border: 1px solid peru;
   max-width: 335px;
   max-height: 95px;
@@ -196,7 +196,7 @@ button:hover {
   max-width: 300px;
 }
 
-.opis.completed {
+.description.completed {
   color: blue; 
 
 }

@@ -6,7 +6,7 @@ export const addTodo = async (todoData) => {
     const response = await axios.post(apiUrl, todoData);
     return response.data;
   } catch (error) {
-    console.error('Błąd podczas dodawania zadania:', error.response ? error.response.data.message : error.message);
+    console.error('Error adding task:', error.response ? error.response.data.message : error.message);
     throw error;
   }
 };
@@ -16,7 +16,7 @@ export const fetchTodos = async () => {
     const response = await axios.get(apiUrl);
     return response.data;
   } catch (error) {
-    console.error("Błąd podczas pobierania zadań:", error.response ? error.response.data.message : error.message);
+    console.error('Error fetching tasks:', error.response ? error.response.data.message : error.message);
     throw error;
   }
 };
@@ -25,7 +25,7 @@ export const deleteTodo = async (id) => {
   try {
     await axios.delete(`${apiUrl}/${id}`);
   } catch (error) {
-    console.error('Błąd podczas usuwania zadania:', error.response ? error.response.data.message : error.message);
+    console.error('Error deleting task:', error.response ? error.response.data.message : error.message);
     throw error;
   }
 };

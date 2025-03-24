@@ -11,12 +11,12 @@ const AddTodo = () => {
       };
 
       try {
-        console.log('Wysyłam zadanie:', todoData); 
+        console.log('Sending task:', todoData); 
         const addedTodo = await addTodo(todoData); 
         setNewTodo('');
-        console.log('Dodane zadanie:', addedTodo); 
+        console.log('Added task:', addedTodo); 
       } catch (error) {
-        console.error('Nie udało się dodać zadania', error); 
+        console.error('Failed to add task', error); 
       }
     }
   };
@@ -27,9 +27,9 @@ const AddTodo = () => {
         type="text"
         value={newTodo}
         onChange={(e) => setNewTodo(e.target.value)}
-        placeholder="Dodaj nowe zadanie"
+        placeholder="Add a new task"
       />
-      <button onClick={handleAdd}>Dodaj</button>
+      <button onClick={handleAdd}>Add</button>
     </div>
   );
 };

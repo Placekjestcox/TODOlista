@@ -12,7 +12,7 @@ export const useTodos = () => {
         const fetchedTodos = await fetchTodos();
         setTodos(fetchedTodos);
       } catch (error) {
-        console.error("Błąd podczas pobierania zadań:", error);
+        console.error("Error while fetching tasks:", error);
       }
     };
 
@@ -31,7 +31,7 @@ export const useTodos = () => {
         setTodos([...todos, addedTodo]);
         setNewTodo('');
       } catch (error) {
-        console.error('Nie udało się dodać zadania', error);
+        console.error('Failed to add task', error);
       }
     }
   };
@@ -70,7 +70,7 @@ export const useTodos = () => {
       await deleteTodo(id);
       setTodos(todos.filter(todo => todo._id !== id));
     } catch (error) {
-      console.error('Nie udało się usunąć zadania', error);
+      console.error('Failed to delete task', error);
     }
   };
 

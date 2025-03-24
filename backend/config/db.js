@@ -6,9 +6,9 @@ const connectDB = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    console.log('Połączono z MongoDB');
+    console.log('Connect to MongoDB');
   } catch (error) {
-    console.error('Błąd połączenia z MongoDB:', error);
+    console.error('MongoDB connection error:', error);
     process.exit(1); 
   }
 };
@@ -24,9 +24,9 @@ const addUser = async () => {
   try {
     const user = new User({ name: 'Jan', age: 30 });
     await user.save();
-    console.log('Dodano użytkownika!');
+    console.log('User added!');
   } catch (error) {
-    console.error('Błąd podczas dodawania użytkownika:', error);
+    console.error('Error while adding user:', error);
   }
 };
 
